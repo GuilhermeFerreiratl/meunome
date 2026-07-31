@@ -1,0 +1,30 @@
+// EDITAR AQUI: Coloque seus jogos e links
+const jogos = [
+  { nome: "Fortune Rabbit", img: "img/fortune-rabbit.jpg", provider: "PG", link: "#" },
+  { nome: "Fortune Rabbit", img: "img/fortune-rabbit2.jpg", provider: "WG", link: "#" },
+  { nome: "Zeus vs Hades", img: "img/zeus.jpg", provider: "PG", link: "#" },
+  { nome: "Fortune Tiger", img: "img/fortune-tiger.jpg", provider: "PG", link: "#" },
+  { nome: "Fortune Snake", img: "img/fortune-snake.jpg", provider: "WG", link: "#" },
+  { nome: "Triple Pot Gold", img: "img/triple-pot.jpg", provider: "PG", link: "#" },
+];
+
+const grid = document.getElementById('games-grid');
+jogos.forEach(jogo => {
+  grid.innerHTML += `
+    <div class="card" onclick="window.location.href='${jogo.link}'">
+      <div style="position:relative">
+        <img src="${jogo.img}" alt="${jogo.nome}">
+        <div class="provider">${jogo.provider}</div>
+      </div>
+      <p>${jogo.nome}</p>
+    </div>
+  `;
+});
+
+// Botão TOPO
+document.getElementById('topo-btn').onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+
+// Registrar PWA
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}

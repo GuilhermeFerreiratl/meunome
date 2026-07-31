@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeuPG - Jogos Populares</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#22c55e">
+</head>
+<body>
+  <header>
+    <button id="menu-btn">☰</button>
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <button id="search-btn">🔍</button>
+  </header>
+
+  <aside id="sidebar">
+    <nav>
+      <a class="active"><span>🔥</span> Popular</a>
+      <a><span>🎰</span> Slots</a>
+      <a><span>🐟</span> Pescaria</a>
+      <a><span>🕒</span> Recente</a>
+      <a><span>⭐</span> Favoritos</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section>
+      <div class="section-title">
+        <h2>🔥 Popular</h2>
+        <a href="#">Tudo ></a>
+      </div>
+      <div class="grid" id="games-grid"></div>
+      <div class="expand">Mais 90 jogos <span>Expandir ⌄</span></div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>🎰 Slots</h2>
+        <a href="#">Tudo ></a>
+      </div>
+      <div class="banner">
+        <img src="img/banner-pg.jpg" alt="PG Slots">
+      </div>
+      <div class="banner">
+        <img src="img/banner-pp.jpg" alt="PP Slots">
+      </div>
+    </section>
+  </main>
+
+  <button id="topo-btn">🔔<br>TOPO</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
