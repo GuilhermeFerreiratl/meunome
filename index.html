@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cooperação - Jogos</title>
+  <title>Cooperação</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#00aaff">
@@ -17,30 +17,29 @@
 
   <aside id="sidebar">
     <nav>
-      <button class="menu-item active"><span>🔥</span> Popular</button>
-      <button class="menu-item"><span>🎰</span> Slots</button>
-      <button class="menu-item"><span>🐟</span> Pescaria</button>
-      <button class="menu-item"><span>🕒</span> Recente</button>
-      <button class="menu-item"><span>⭐</span> Favoritos</button>
+      <button class="menu-item active" data-menu="Popular"><span>🔥</span> Popular</button>
+      <button class="menu-item" data-menu="Slots"><span>🎰</span> Slots</button>
+      <button class="menu-item" data-menu="Pescaria"><span>🐟</span> Pescaria</button>
+      <button class="menu-item" data-menu="Recente"><span>🕒</span> Recente</button>
+      <button class="menu-item" data-menu="Favoritos"><span>⭐</span> Favoritos</button>
     </nav>
   </aside>
 
   <main id="main-content">
     <section id="home-screen">
       <div class="section-title">
-        <h2>🔥 Popular</h2>
+        <h2 id="page-title">🔥 Popular</h2>
       </div>
-      <div class="grid" id="games-grid"></div>
+      <p>Clique em um item do menu para ver as opções</p>
     </section>
 
-    <section id="game-screen" style="display:none;">
+    <section id="menu-screen" style="display:none;">
       <button id="back-btn">⬅ Voltar</button>
-      <h2 id="game-title"></h2>
-      <img id="game-img" src="" alt="">
+      <h2 id="menu-title"></h2>
       <div class="game-buttons-big">
-        <button id="btn1">Abrir Opção 1</button>
-        <button id="btn2">Abrir Opção 2</button>
-        <button id="btn3">Abrir Opção 3</button>
+        <button id="btn1">Botão 1</button>
+        <button id="btn2">Botão 2</button>
+        <button id="btn3">Botão 3</button>
       </div>
     </section>
   </main>
