@@ -1,11 +1,11 @@
 {
-  "name": "MeuPG",
-  "short_name": "MeuPG",
+  "name": "Cooperação",
+  "short_name": "Cooperação",
   "start_url": "/meunome/?source=pwa",
   "scope": "/meunome/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#22c55e",
+  "background_color": "#00aaff",
+  "theme_color": "#00aaff",
   "icons": [
     {
       "src": "icon-192.png",
