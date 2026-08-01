@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coperação</title>
+  <title>Cooperação - Jogos</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#22c55e">
+  <meta name="theme-color" content="#00aaff">
 </head>
 <body>
   <header>
@@ -17,11 +17,11 @@
 
   <aside id="sidebar">
     <nav>
-      <a class="active"><span>🔥</span> Popular</a>
-      <a><span>🎰</span> Slots</a>
-      <a><span>🐟</span> Pescaria</a>
-      <a><span>🕒</span> Recente</a>
-      <a><span>⭐</span> Favoritos</a>
+      <button class="menu-item active"><span>🔥</span> Popular</button>
+      <button class="menu-item"><span>🎰</span> Slots</button>
+      <button class="menu-item"><span>🐟</span> Pescaria</button>
+      <button class="menu-item"><span>🕒</span> Recente</button>
+      <button class="menu-item"><span>⭐</span> Favoritos</button>
     </nav>
   </aside>
 
@@ -32,7 +32,6 @@
         <a href="#">Tudo ></a>
       </div>
       <div class="grid" id="games-grid"></div>
-      <div class="expand">Mais 90 jogos <span>Expandir ⌄</span></div>
     </section>
 
     <section>
@@ -40,17 +39,12 @@
         <h2>🎰 Slots</h2>
         <a href="#">Tudo ></a>
       </div>
-      <div class="banner">
-        <img src="banner-pg.jpg" alt="PG Slots">
-      </div>
-      <div class="banner">
-        <img src="banner-pp.jpg" alt="PP Slots">
-      </div>
+      <div class="banner"><img src="banner-pg.jpg" alt="PG Slots"></div>
+      <div class="banner"><img src="banner-pp.jpg" alt="PP Slots"></div>
     </section>
   </main>
 
   <button id="topo-btn">🔔<br>TOPO</button>
-
   <script src="script.js"></script>
 </body>
 </html>
