@@ -1,27 +1,33 @@
-.menu-item {
-  width: 100%;
-  background: none;
-  border: none;
-  text-align: left;
-  padding: 12px;
-  font-size: 16px;
-  color: #333;
-  cursor: pointer;
-}
-.menu-item.active { background: #e6f7ff; color: #00aaff; }
-
-.game-buttons {
+.game-buttons-big {
   display: flex;
-  gap: 5px;
-  margin-top: 8px;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 0 20px;
 }
-.game-buttons button {
-  flex: 1;
-  padding: 6px;
-  font-size: 12px;
-  border: 1px solid #00aaff;
+.game-buttons-big button {
+  padding: 18px;
+  font-size: 18px;
+  border: none;
   background: #00aaff;
   color: white;
-  border-radius: 6px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#back-btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  background: #ccc;
+  border-radius: 8px;
   cursor: pointer;
 }
+#game-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+.card { cursor: pointer; }
