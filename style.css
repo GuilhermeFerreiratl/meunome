@@ -1,3 +1,20 @@
+.menu-item {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 14px 12px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+.menu-item.active { background: #22c55e; color: white; }
+.menu-item:hover { background: #f0f0f0; }
+
 .game-buttons-big {
   display: flex;
   flex-direction: column;
@@ -6,7 +23,7 @@
   padding: 0 20px;
 }
 .game-buttons-big button {
-  padding: 18px;
+  padding: 20px;
   font-size: 18px;
   border: none;
   background: #00aaff;
@@ -23,11 +40,3 @@
   border-radius: 8px;
   cursor: pointer;
 }
-#game-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto;
-}
-.card { cursor: pointer; }
