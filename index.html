@@ -5,46 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cooperação</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json?v=4">
   <meta name="theme-color" content="#00aaff">
 </head>
 <body>
   <header>
     <button id="menu-btn">☰</button>
-    <img src="logo.png" alt="Logo" class="logo">
-    <button id="search-btn">🔍</button>
+    <h1>Cooperação</h1>
   </header>
 
   <aside id="sidebar">
     <nav>
-      <button class="menu-item active" data-menu="Popular"><span>🔥</span> Popular</button>
-      <button class="menu-item" data-menu="Slots"><span>🎰</span> Slots</button>
-      <button class="menu-item" data-menu="Pescaria"><span>🐟</span> Pescaria</button>
-      <button class="menu-item" data-menu="Recente"><span>🕒</span> Recente</button>
-      <button class="menu-item" data-menu="Favoritos"><span>⭐</span> Favoritos</button>
+      <button class="menu-btn active" data-menu="Popular">🔥 Popular</button>
+      <button class="menu-btn" data-menu="Slots">🎰 Slots</button>
+      <button class="menu-btn" data-menu="Pescaria">🐟 Pescaria</button>
+      <button class="menu-btn" data-menu="Recente">🕒 Recente</button>
+      <button class="menu-btn" data-menu="Favoritos">⭐ Favoritos</button>
     </nav>
   </aside>
 
-  <main id="main-content">
-    <section id="home-screen">
-      <div class="section-title">
-        <h2 id="page-title">🔥 Popular</h2>
-      </div>
-      <p>Clique em um item do menu para ver as opções</p>
-    </section>
+  <main>
+    <div id="home">
+      <h2 id="titulo-pagina">Selecione uma categoria</h2>
+    </div>
 
-    <section id="menu-screen" style="display:none;">
-      <button id="back-btn">⬅ Voltar</button>
-      <h2 id="menu-title"></h2>
-      <div class="game-buttons-big">
-        <button id="btn1">Botão 1</button>
-        <button id="btn2">Botão 2</button>
-        <button id="btn3">Botão 3</button>
+    <div id="tela-menu" style="display:none;">
+      <button id="voltar">⬅ Voltar</button>
+      <h2 id="titulo-menu"></h2>
+      <div class="botoes-google">
+        <button id="g1">Botão 1</button>
+        <button id="g2">Botão 2</button>
+        <button id="g3">Botão 3</button>
       </div>
-    </section>
+    </div>
   </main>
-
-  <button id="topo-btn">🔔<br>TOPO</button>
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
